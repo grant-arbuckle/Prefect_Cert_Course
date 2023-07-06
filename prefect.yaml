@@ -17,7 +17,7 @@ pull:
 # - prefect.deployments.steps.set_working_directory:
 #     directory: C:\Users\grant.arbuckle\Prefect_Cert_Course
 - prefect.deployments.steps.git_clone:
-    repository: 
+    repository: https://github.com/grant-arbuckle/Prefect_Cert_Course
     branch: main
 
 # the deployments section allows you to provide configuration for deploying flows
