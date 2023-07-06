@@ -10,7 +10,11 @@ prefect-version: 2.10.18
 build: null
 
 # push section allows you to manage if and how this project is uploaded to remote locations
-push: null
+push:
+- prefect.deployments.steps.run_shell_script:
+    id: git-push
+    script: git push https://github.com/grant-arbuckle/Prefect_Cert_Course
+    stream_output: false
 
 # pull section allows you to provide instructions for cloning this project in remote locations
 pull:
